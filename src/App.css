@@ -1,0 +1,160 @@
+.app {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: #1e1e2e;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  color: #cdd6f4;
+  letter-spacing: 0.1em;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 0.6em 1em;
+  border: 1px solid #45475a;
+  border-radius: 8px;
+  background: #313244;
+  color: #cdd6f4;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-row input:focus {
+  border-color: #89b4fa;
+}
+
+.input-row input::placeholder {
+  color: #6c7086;
+}
+
+.input-row button {
+  padding: 0.6em 1.2em;
+  background: #89b4fa;
+  color: #1e1e2e;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-row button:hover {
+  background: #b4befe;
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  flex: 1;
+  padding: 0.4em 0.8em;
+  background: #313244;
+  color: #a6adc8;
+  border: 1px solid #45475a;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filters button:hover {
+  background: #45475a;
+  color: #cdd6f4;
+}
+
+.filters button.active {
+  background: #89b4fa;
+  color: #1e1e2e;
+  border-color: #89b4fa;
+  font-weight: 600;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75em 1em;
+  background: #313244;
+  border-radius: 8px;
+  border: 1px solid #45475a;
+  transition: opacity 0.2s;
+}
+
+.todo-list li.done {
+  opacity: 0.5;
+}
+
+.todo-list li.done span {
+  text-decoration: line-through;
+  color: #6c7086;
+}
+
+.todo-list li.empty {
+  justify-content: center;
+  color: #6c7086;
+  font-style: italic;
+  border-style: dashed;
+}
+
+.todo-list li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #a6e3a1;
+}
+
+.todo-list li span {
+  flex: 1;
+  color: #cdd6f4;
+  word-break: break-word;
+}
+
+.todo-list li .delete {
+  background: none;
+  border: 1px solid #f38ba8;
+  color: #f38ba8;
+  font-size: 0.85em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.todo-list li .delete:hover {
+  background: #f38ba8;
+  color: #1e1e2e;
+}
+
+.count {
+  text-align: right;
+  color: #6c7086;
+  font-size: 0.85em;
+  margin: 1rem 0 0;
+}
